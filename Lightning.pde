@@ -3,16 +3,15 @@ int startY = 150;
 int endX = 0;
 int endY = 150;
 
-void setup()
-{
+void setup(){
   size(500,500);
   strokeWeight(7);
   background(255,255,255);
   frameRate(60);
 }
-void draw()
-{
-  noStroke();
+
+void draw(){ 
+    noStroke();
     rect(0,0,100,500);
     endX = startX + (int)(Math.random()*9);
     endY = startY + (int)(Math.random()*18)-7;
@@ -47,9 +46,6 @@ void draw()
       fill(0,0,255);
     }
   }
-
-}
-}
 void Bolt(int startX,int startY,int endX,int endY){
   line(startX,startY,endX,endY);
 }
@@ -61,4 +57,3 @@ void mousePressed()
   endX = 0;
   endY = 150;
 }
-
